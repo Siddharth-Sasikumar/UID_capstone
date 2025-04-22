@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engine & Features Specifications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 2%;
+    }
+
+    table {
+      width: 100%;
+      max-width: 700px;
+      border-collapse: collapse;
+      background-color: black;
+      color: white;
+    }
+
+    th, td {
+      border: 1px solid white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: gray;
+      text-align: center;
+    }
+
+    select {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+      font-size: 16px;
+      width: 250px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+
+    .colornames {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .booking {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a button {
+      border-radius: 5px;
+      background-color: rgb(238, 165, 70);
+      width: auto;
+      height: auto;
+      padding: 10px 20px;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      table, select {
+        font-size: 14px;
+      }
+
+      .colornames img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+      }
+
+      h2, h3 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      .booking {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>CBR 650R</h2>
+  <p>
+    The CBR650R is the perfect blend of form and function. With its powerful inline-four engine, razor-sharp handling, and eye-catching design, this bike provides an unrivalled precision riding experience. Take control of your daily commute with speed and style.<br><br>
+    The bike is both purposeful and elegant, with an overhauled design ideal for everything from weekday commuting to weekend getaways, flawlessly blending comfort and cool. Style has been aggressively redesigned, drawing inspiration from the legendary CBR1000RR-R Fireblade.
+  </p>
+  <img src="cbr650r.jpg" alt="CBR 650R">
+
+  <table>
+    <caption>Engine Specifications</caption>
+    <tr><td>Engine Type</td><td>4 stroke 16 valve DOHC, inline 4, liquid-cooled</td></tr>
+    <tr><td>Engine Displacement</td><td>649 cc</td></tr>
+    <tr><td>Max. Power Output</td><td>70 kW @ 12,000 rpm</td></tr>
+    <tr><td>Max. Torque</td><td>63 N-m @ 9,500 rpm</td></tr>
+    <tr><td>Compression Ratio</td><td>11.6:1</td></tr>
+    <tr><td>Bore & Stroke</td><td>67 x 46 mm</td></tr>
+    <tr><td>Starter</td><td>Electric</td></tr>
+    <tr><td>Fuel System</td><td>Fuel Injection</td></tr>
+    <tr><td>Fuel Capacity</td><td>15.4 L</td></tr>
+  </table>
+
+  <table>
+    <caption>Tyres & Brakes</caption>
+    <tr><td>Tyres (Front)</td><td>120/70-17 M/C</td></tr>
+    <tr><td>Tyres (Rear)</td><td>180/55-17 M/C</td></tr>
+    <tr><td>Suspension Front</td><td>Showa SFF USD fork</td></tr>
+    <tr><td>Suspension Rear</td><td>Monoshock damper with 10-stage pre-load adjuster</td></tr>
+    <tr><td>Brakes (Front)</td><td>310 mm x 4.5 mm double disc with 4-piston caliper</td></tr>
+    <tr><td>Brakes (Rear)</td><td>240 mm x 5 mm single disc with single piston caliper</td></tr>
+  </table>
+
+  <h2>Color options:</h2>
+  <div class="colornames">
+    <div>
+      <img src="GRAND-PRIX-RED-24.png" alt="Grand Prix Red">
+      <h3 style="text-align:center;">Grand Prix Red</h3>
+    </div>
+    <div>
+      <img src="Mat-Ballistic-Black-Metallic-24.png" alt="Mat Black">
+      <h3 style="text-align:center;">Mat Ballistic Black</h3>
+    </div>
+  </div>
+
+  <h2>Ex-Showroom Price Rs.9,16,055</h2>
+
+  <div class="booking">
+    <div>
+      <select>
+        <option selected disabled>SELECT STATE</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+      </select>
+    </div>
+
+    <div>
+      <a href="testrideform.html">
+        <button><h3>Book Test Ride</h3></button>
+      </a>
+    </div>
+  </div>
+
+  <a href="form.html">
+    <button><h2>BOOK NOW</h2></button>
+  </a>
+</body>
+</html>
