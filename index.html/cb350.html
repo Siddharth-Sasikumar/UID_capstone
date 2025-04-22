@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engine & Features Specifications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      max-width: 800px;
+      border-collapse: collapse;
+      background-color: black;
+      color: white;
+    }
+
+    th, td {
+      border: 1px solid white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: gray;
+      text-align: center;
+    }
+
+    svg:hover {
+      cursor: pointer;
+    }
+
+    select {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+      font-size: 16px;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+
+    .colors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .colors div {
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    .colors img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .booking {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+
+    button {
+      border-radius: 5px;
+      background-color: rgb(238, 165, 70);
+      padding: 10px 20px;
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+        gap: 20px;
+      }
+
+      table, th, td {
+        font-size: 14px;
+      }
+
+      .colors div {
+        max-width: 100%;
+      }
+
+      select {
+        width: 100%;
+      }
+
+      .booking {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      button {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align: center;">CB 350</h2>
+  <p style="text-align: center;">
+    The thunderous power, the fearless stance, the exhilarating rush of the open roads - a legend rises, CB350, where tech-meets-bold riding, with its timeless style and brave presence, itʼs your trusted sidekick.<br> Gear up to charge with the 2025-ready OBD-2B standards. Where others hesitate, you prefer exploring uncharted paths, you ride bolder together over every stretch of road with your CB350 as the ultimate ally,<br> subtly asserting your bold voice to the world of whisperers at every mile. So, it is your time to take the roads with CB350, Bold alone, Bolder together.
+  </p>
+  <img src="cb350.jpg" alt="CB350" style="width: 90%; max-width: 600px; border-radius: 2%;" />
+
+  <table>
+    <caption>ENGINE Specifications</caption>
+    <tr><td>Type</td><td>4 Stroke, SI Engine</td></tr>
+    <tr><td>Displacement</td><td>348.36cc</td></tr>
+    <tr><td>Max Engine Output</td><td>15.5kW @ 5500 rpm</td></tr>
+    <tr><td>Max Torque</td><td>29.4N-m @ 3000 rpm</td></tr>
+    <tr><td>Fuel System</td><td>PGM-FI</td></tr>
+    <tr><td>Bore x Stroke</td><td>70.000mm X 90.519mm</td></tr>
+    <tr><td>Compression Ratio</td><td>9.5:1</td></tr>
+    <tr><td>Starting Method</td><td>Self Start</td></tr>
+  </table>
+
+  <table>
+    <caption>MODELS</caption>
+    <tr>
+      <th>Features</th>
+      <th>DLX</th>
+      <th>DLX Pro</th>
+    </tr>
+    <tr><td>Honda Smartphone Voice Control System (HSVCS)</td><td>✗</td><td>✔</td></tr>
+    <tr><td>Headlight Cover</td><td>Silver</td><td>Chrome</td></tr>
+    <tr><td>Fender Color</td><td>Black</td><td>Body color</td></tr>
+    <tr><td>Seat Color</td><td>Black</td><td>Brown</td></tr>
+  </table>
+
+  <h2>Color options:</h2>
+  <div class="colors">
+    <div>
+      <img src="Mat_Crust_Metallic_dev1.png" alt="Sandstorm Color" />
+      <h3 style="text-align: center;">Sandstorm color</h3>
+    </div>
+    <div>
+      <img src="Mat_Marshal_Green_Metallic_dev1.png" alt="Green Color" />
+      <h3 style="text-align: center;">Green color</h3>
+    </div>
+    <div>
+      <img src="Precious_Red_Metallic_dev1.png" alt="Red Color" />
+      <h3 style="text-align: center;">Red color</h3>
+    </div>
+  </div>
+
+  <h2 style="text-align: center;">Ex-Showroom Price Rs.1,99,990</h2>
+
+  <div class="booking">
+    <div>
+      <select>
+        <option selected disabled>SELECT STATE</option>
+        <!-- States... -->
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <!-- add more states as needed -->
+      </select>
+    </div>
+    <div>
+      <a href="testrideform.html">
+        <button><h3>Book Test Ride</h3></button>
+      </a>
+    </div>
+  </div>
+
+  <a href="form.html">
+    <button><h2>BOOK NOW</h2></button>
+  </a>
+</body>
+</html>
