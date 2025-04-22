@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .menu button {
+            width: 100%;
+            max-width: 300px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .menu button:hover {
+            background: rgb(255, 255, 255);
+            color: rgb(255, 0, 0);
+        }
+
+        .menu svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        a {
+            text-decoration: none;
+            width: 100%;
+        }
+
+        button {
+            margin: 20px auto;
+        }
+
+        @media (max-width: 480px) {
+            .menu button {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                font-size: 14px;
+            }
+
+            .menu svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>What type of service you are looking for!</h1><br>
+        <div class="menu">
+            <a href="cancellation.html">
+                <button>Booking Cancellation
+                    <svg width="32" height="32" viewBox="0 0 32 32">
+                        <path d="M6 14l2-4h16l2 4v10h-2v-2H8v2H6V14z" fill="#ccc"/>
+                        <path d="M10 14h4v4h-4zM18 14h4v4h-4z" fill="#eee"/>
+                        <circle cx="10" cy="24" r="3" fill="#555"/>
+                        <circle cx="22" cy="24" r="3" fill="#555"/>
+                        <line x1="4" y1="4" x2="28" y2="28" stroke="red" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </a>
+            
+            <a href="refundform.html">
+                <button>Apply Refund
+                    <svg width="32" height="32" viewBox="0 0 300 150">
+                        <rect x="10" y="10" width="280" height="130" rx="20" ry="20" fill="#4CAF50" stroke="#2E7D32" stroke-width="4"/>
+                        <ellipse cx="50" cy="75" rx="30" ry="40" fill="#388E3C"/>
+                        <ellipse cx="250" cy="75" rx="30" ry="40" fill="#388E3C"/>
+                        <circle cx="150" cy="75" r="40" fill="#FFFFFF" stroke="#2E7D32" stroke-width="3"/>
+                        <text x="135" y="90" font-size="40" font-weight="bold" fill="#2E7D32">$</text>
+                    </svg>
+                </button>
+            </a>
+            
+            <a href="rcform.html">
+                <button>Get RSA
+                    <svg width="32" height="32" viewBox="0 0 100 100">
+                        <rect x="20" y="10" width="60" height="80" rx="5" ry="5" fill="#F5F5F5" stroke="#000" stroke-width="3"/>
+                        <line x1="30" y1="30" x2="70" y2="30" stroke="#000" stroke-width="2"/>
+                        <line x1="30" y1="40" x2="70" y2="40" stroke="#000" stroke-width="2"/>
+                        <line x1="30" y1="50" x2="70" y2="50" stroke="#000" stroke-width="2"/>
+                        <line x1="30" y1="60" x2="50" y2="60" stroke="#000" stroke-width="2"/>
+                        <polygon points="60,70 80,90 85,85 65,65" fill="#000"/>
+                        <rect x="65" y="65" width="5" height="20" fill="#666" stroke="#000" stroke-width="2"/>
+                        <polygon points="80,90 85,85 88,88 83,93" fill="#000"/>
+                    </svg>
+                </button>
+            </a>
+            
+            <a href="serviceform.html">
+                <button>Vehicle Service
+                    <svg width="32" height="32" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="20" stroke="#000" stroke-width="4" fill="none"/>
+                        <circle cx="50" cy="50" r="8" fill="#000"/>
+                        <rect x="48" y="28" width="4" height="10" fill="#000"/>
+                        <rect x="48" y="62" width="4" height="10" fill="#000"/>
+                        <rect x="28" y="48" width="10" height="4" fill="#000"/>
+                        <rect x="62" y="48" width="10" height="4" fill="#000"/>
+                        <rect x="35" y="35" width="8" height="4" transform="rotate(-45 35 35)" fill="#000"/>
+                        <rect x="57" y="35" width="8" height="4" transform="rotate(45 57 35)" fill="#000"/>
+                        <rect x="35" y="57" width="8" height="4" transform="rotate(45 35 57)" fill="#000"/>
+                        <rect x="57" y="57" width="8" height="4" transform="rotate(-45 57 57)" fill="#000"/>
+                    </svg>
+                </button>
+            </a>
+        </div>
+        <div>
+            <h3>For emergency contact "99XXXXXXXX" or mail us at "MotoMahali@YYY.com"</h3>
+        </div>
+    </center>
+</body>
+</html>

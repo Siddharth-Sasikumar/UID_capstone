@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle RC Upload</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+            padding: 20px;
+            border-radius: 8px;
+            color: black;
+            width: 300px;
+        }
+        input, button {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="vehicleForm">
+        <h2>Upload Vehicle RC</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
+        
+        <label for="file">Upload RC:</label>
+        <input type="file" id="file" name="file" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.getElementById("bikeServiceForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let name = document.getElementById("name").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let bikeModel = document.getElementById("bikeModel").value.trim();
+            let serviceDate = document.getElementById("serviceDate").value;
+            let serviceType = document.getElementById("serviceType").value;
+            let file = document.getElementById("file").files.length;
+
+            if (name === "") {
+                alert("Please enter your name.");
+                return;
+            }
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return;
+            }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            
+            if (file === 0) {
+                alert("Please upload your driving license.");
+                return;
+            }
+            
+            alert("out team will contact you shortly");
+            this.submit();
+        });
+    </script>

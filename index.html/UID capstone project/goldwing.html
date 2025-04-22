@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engine & Features Specifications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h2, h3, p {
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 2%;
+    }
+
+    table {
+      width: 95%;
+      max-width: 800px;
+      border-collapse: collapse;
+      background-color: black;
+      color: white;
+      margin: 0 auto;
+    }
+
+    th, td {
+      border: 1px solid white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: gray;
+      text-align: center;
+    }
+
+    select {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: 1px solid white;
+      font-size: 16px;
+      width: 100%;
+      max-width: 250px;
+      box-sizing: border-box;
+    }
+
+    button {
+      border-radius: 5px;
+      background-color: rgb(238, 165, 70);
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1rem;
+      transition: 0.5s;
+    }
+
+    button:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+
+    .colornames {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .booking {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    @media (min-width: 600px) {
+      .booking {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .colornames img {
+        margin-left: 0;
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>THE GOLDWING TOUR</h2>
+  <p>
+    The Gold Wing Tour is a Honda flagship motorcycle for a reason, offering supreme levels of performance and luxury through the city, or out on the open road. Taking the incredible Gold Wing as a base, it adds carrying capacity and a more comfortable and relaxed ride for the pillion. Luxurious material features on both front and rear seats – ensuring ultimate riding comfort. The audio system and speakers deliver crisp sound quality, whilst dual LED fog lights guarantee piercing visibility.
+  </p>
+  <img src="goldwing.jpg" alt="Goldwing Motorcycle"/>
+
+  <table>
+    <caption>Engine Specification</caption>
+    <tr><td>Type</td><td>Liquid-cooled 4 Stroke 24 valve SOHC Flat-6</td></tr>
+    <tr><td>Displacement</td><td>1,833cc</td></tr>
+    <tr><td>Valves per Cylinder</td><td>4</td></tr>
+    <tr><td>Bore x Stroke</td><td>73mm x 73mm</td></tr>
+    <tr><td>Compression Ratio</td><td>10.5:1</td></tr>
+    <tr><td>Max. Power Output</td><td>93KW/5500rpm</td></tr>
+    <tr><td>Max. Torque</td><td>170Nm/4500rpm</td></tr>
+    <tr><td>Oil Capacity</td><td>5.6L (DCT)</td></tr>
+    <tr><td>CO² Emissions</td><td>127g/km</td></tr>
+  </table>
+
+  <table>
+    <caption>Drivetrain</caption>
+    <tr><td>Clutch Type</td><td>(DCT) Hydraulic, wet, multiplate with oil pressure</td></tr>
+    <tr><td>Transmission Type</td><td>7-speed forward and reverse DCT</td></tr>
+    <tr><td>Primary Reduction</td><td>1.795 (79/44)</td></tr>
+    <tr><td>Gear Ratios</td><td>(DCT) 1st: 2.167 2nd: 1.696 3rd: 1.304 4th: 1.038 5th: 0.821 6th: 0.667 7th: 0.522 Rev: 1.190</td></tr>
+    <tr><td>Final Reduction</td><td>Engine side 0.972 <br> Rear Wheel side 2.615</td></tr>
+    <tr><td>Final Drive</td><td>Enclose Shaft</td></tr>
+  </table>
+
+  <table>
+    <caption>Fuel Type</caption>
+    <tr><td>Carburettor</td><td>PGM-FI Electronic Fuel Injection</td></tr>
+    <tr><td>Throttle Bore</td><td>50mm</td></tr>
+    <tr><td>Air Cleaner</td><td>Viscous, cartridge type paper filter</td></tr>
+    <tr><td>Fuel Tank Capacity</td><td>21.1L</td></tr>
+  </table>
+
+  <h2>Color options:</h2>
+  <div class="colornames">
+    <img src="PEARL_GLARE_WHITE.png" alt="Pearl Glare White">
+    <h3>Pearl White</h3>
+    <h2>Ex-Showroom Price Rs.39,16,055</h2>
+  </div>
+
+  <div class="booking">
+    <select>
+      <option selected disabled>SELECT STATE</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+      <option value="Assam">Assam</option>
+      <option value="Bihar">Bihar</option>
+      <option value="Chhattisgarh">Chhattisgarh</option>
+      <option value="Goa">Goa</option>
+      <option value="Gujarat">Gujarat</option>
+      <option value="Haryana">Haryana</option>
+      <option value="Himachal Pradesh">Himachal Pradesh</option>
+      <option value="Jharkhand">Jharkhand</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Madhya Pradesh">Madhya Pradesh</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Manipur">Manipur</option>
+      <option value="Meghalaya">Meghalaya</option>
+      <option value="Mizoram">Mizoram</option>
+      <option value="Nagaland">Nagaland</option>
+      <option value="Odisha">Odisha</option>
+      <option value="Punjab">Punjab</option>
+      <option value="Rajasthan">Rajasthan</option>
+      <option value="Sikkim">Sikkim</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Telangana">Telangana</option>
+      <option value="Tripura">Tripura</option>
+      <option value="Uttar Pradesh">Uttar Pradesh</option>
+      <option value="Uttarakhand">Uttarakhand</option>
+      <option value="West Bengal">West Bengal</option>
+    </select>
+
+    <a href="testrideform.html">
+      <button><h3>Book Test Ride</h3></button>
+    </a>
+  </div>
+
+  <a href="form.html">
+    <button><h2>BOOK NOW</h2></button>
+  </a>
+</body>
+</html>
